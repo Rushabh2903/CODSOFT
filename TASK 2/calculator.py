@@ -6,7 +6,7 @@ while flag: #INFINITE LOOP
     print('3 : Multiplication   4 : Division')
     print('5 : Modulo   6 : Exit')
     inp = int(input("Enter your choice : "))
-    
+
     if inp==6:
         flag=0
         continue
