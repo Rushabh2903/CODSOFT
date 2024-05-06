@@ -4,6 +4,13 @@ uppers = string.ascii_uppercase
 digits = string.digits
 special = string.punctuation
 
+'''
+***Assuming***
+Easy - upper case+ lower case
+Meduim - Easy + digits
+Hard - Meduim + special characters
+'''
+
 def generate(s, length, complexity):
     if complexity==3:
         r = random.randint(1,length//2)
