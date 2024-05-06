@@ -16,7 +16,7 @@ def update_task(list, dict):
         list[x]=0
     except IndexError as e:
         if len(list)==0:
-            print('\t-->No Tasks as of now<--')
+            display_tasks(list, dict)
         else:
             print(f'!!\tNo task numbered {x+1}\t!!')
         return(list, dict)
@@ -84,12 +84,12 @@ def main():
     print("\t\t\t\t| WELCOME |")
     print('\t\t\t\t***********')
     while flag:
-        # if cnt==5:
-        #     print('\t\t\t---------------------------')
-        #     print('\t\t\t1. Create\t2. Update\n\t\t\t3. Mark as Done\t4. Display\n\t\t\t5. Exit')
-        #     print('\t\t\t---------------------------')
-        #     cnt=0
-        # cnt+=1
+        if cnt==5:
+            print('\t\t\t---------------------------')
+            print('\t\t\t1. Create\t2. Update\n\t\t\t3. Mark as Done\t4. Display\n\t\t\t5. Exit')
+            print('\t\t\t---------------------------')
+            cnt=0
+        cnt+=1
 
         choice = int(input('Enter your choice : '))
 
